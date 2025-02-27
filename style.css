@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.principal{
+    display: grid;
+    padding: 5px;
+    height: 350px;
+}
+.titulo{
+    text-align: center;
+    padding-top: 10px;
+}
+
+figure
+img{
+    justify-content: center;
+    border-radius: 50%;
+    border:1px solid grey;
+}
+.cards-conteiner{
+
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 100px;
+    max-height: 250px;
+    background-image: url('./img/js.png');
+    background-size:14cqb;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    font-size: 60px;
+    font-weight: bold;
+}
+.card:nth-child(2){
+    background-image: url('./img/git.png');
+}
+
+.card:nth-child(3){
+    background-image: url('./img/aws.png');
+}
+
+.card:nth-child(4){
+    background-image: url('./img/bootstrap.png');
+    width:140px;
+    height: 50px;
+}
+.card::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+.card h4{
+    text-align: center;
+    position:relative;
+    z-index: 4;
+    color: white;
+    font-weight:bolder;
+    background: linear-gradient(to bottom,#5555 5%, #bbbbbb 30%, #ffffff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color:#5555;
+}
+
+
